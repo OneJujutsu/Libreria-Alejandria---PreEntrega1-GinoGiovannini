@@ -1,6 +1,6 @@
 let total = 0;
 let cantidaddeproductos
-
+let condicion = true;
 
 let bienvenido = prompt("Bienvenido a la librería de Alejandría, desea comprar algo para leer?   ( SI / NO )");
 
@@ -20,8 +20,7 @@ if (bienvenido == "si" || bienvenido == "SI") {
     final = alert("Entendible que tenga buen dia.");
 }
 
-while (true) {
-    alert("Lo siento pero no tenemos ese libro disponible, si quiere puede ver nuestra colección");
+while (condicion) {
 
     productos = prompt("Perfecto, estos son todos los libros que tenemos disponible ahora mismo. ¿Cuál te gustaría llevar? (Manga, Policial, Terror, Fantastico, ninguno)");
 
@@ -60,7 +59,7 @@ while (true) {
         }
     } else if (productos == "ninguno") {
         alert("Entendible que tenga buen día.");
-        break;
+        condicion = false;
     }
 }
 

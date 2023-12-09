@@ -15,9 +15,10 @@ while (bienvenido != "si" && bienvenido != "SI" && bienvenido != "no" && bienven
 }
 
 if (bienvenido == "si" || bienvenido == "SI") {
-    productos = prompt("Perfecto estos son todos los libros que tenemos disponible ahora mismo, cual te gustaria llevar           Manga, Policial, Terror, Fantasticos    ninguno");
+    alert("Genial, a comprar!");
 }else if (bienvenido == "no" || bienvenido == "NO") {
     final = alert("Entendible que tenga buen dia.");
+    condicion = false;
 }
 
 while (condicion) {
@@ -46,10 +47,8 @@ while (condicion) {
                 total += cantidad(cantidadFantastico, 6000);
                 break;
 
-            default:
-                satisfecho = prompt("¿Está satisfecho con lo que tiene en su carrito o quisiera agregar algo más? (estoy satisfecho) (quisiera agregar algo mas)");
-                break;
         }
+        satisfecho = prompt("Esta Satisfecho con su compra?")
 
         if (satisfecho == "estoy satisfecho") {
             alert("Su total a pagar es de: " + total);
